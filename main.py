@@ -10,5 +10,17 @@ driver.get("https://www.icbc.com/driver-licensing/visit-dl-office/Pages/Book-a-r
 book_button = driver.find_element_by_link_text("Book online")
 book_button.click()
 
+next_button = driver.find_element_by_link_text("Next")
+next_button.click()
+
+def sign_in_input():
+    str(input("Input last name\n"))
+    try:
+        int(input("Enter B.C. Licence Number\n"))
+    except ValueError:
+        print ("Input must be numbers only.")
+    str(input("Enter keyword \n"))
+
+
 
 time.sleep(5)
